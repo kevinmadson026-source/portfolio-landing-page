@@ -1,11 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  output: 'export', 
   images: {
-    unoptimized: true,
+    unoptimized: true, 
   },
-}
+  // Se for usar Netlify, comente a linha abaixo. 
+  // Se for usar GitHub Pages, mantenha ela.
+  // basePath: '/portfolio-landing-page', 
+};
 
-export default nextConfig
+export default nextConfig;
